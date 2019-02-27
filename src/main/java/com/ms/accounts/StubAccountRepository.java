@@ -18,7 +18,7 @@ public class StubAccountRepository implements AccountRepository {
 		accountsByNumber.put("5115", account);
 		account = new Account(2000l, "Anamika" , "2089");
 		accountsByNumber.put("2089", account);
-		account = new Account(3000l, "Dinesh" , "1286");
+		account = new Account(3000l, "Vikash" , "1286");
 		accountsByNumber.put("1286", account);
 		Logger.getLogger(StubAccountRepository.class).info("Created StubAccountRepository");
 	}
