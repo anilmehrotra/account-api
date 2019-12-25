@@ -17,7 +17,53 @@ eureka:
 server: 
   port: 2222
 
-# Disable Spring Boot's "Whitelabel" default error page, so we can use our own
-error:
-  whitelabel:
-    enabled: false
+#tile Info for Field  
+tile:
+  tileInfo:
+    creditAgreementTile:
+     - apiName:  BusinessFinancingAPI
+       fieldName: releasedLimitAmount,productCode
+     - apiName:  ProductAgreementAPI
+       fieldName: accountNumber,agreementId
+    
+    savingTransactionTile:
+     - apiName:  SearchAPI
+       fieldName: releasedLimitAmount,productCode
+     - apiName:  ArrangementAPI
+       fieldName: releasedLimitAmount,productCode
+       
+#tile Info for Field      
+tileinformation:
+  mapTileInfo:
+    creditAgreementTile:
+      BusinessFinancingAPI:
+        - releasedLimitAmount
+        - productCode
+      ProductAgreementAPI:
+        - accountNumber
+        - agreementId
+        
+    savingTransactionTile:
+      gArrangmentAPI:
+        - releasedLimitAmount
+        - productCode
+      gArrengmentSearchAPI:
+        - accountNumber
+        - agreementId
+
+config:
+ persondetail:
+  food:
+     fruits:
+       - mango
+       - banana
+     vegitables:
+       - onion
+       - potato
+  study:
+     school:
+       - RVS
+       - NPS
+     subject:
+       - hindi
+       - english

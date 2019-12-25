@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.ms.accounts;
+package com.ms.accounts.dto;
 
 import java.io.Serializable;
 

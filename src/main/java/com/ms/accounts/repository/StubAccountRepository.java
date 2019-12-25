@@ -1,4 +1,4 @@
-package com.ms.accounts;
+package com.ms.accounts.repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,6 +7,8 @@ import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Repository;
+
+import com.ms.accounts.dto.Account;
 
 @Repository
 public class StubAccountRepository implements AccountRepository {

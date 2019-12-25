@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.ms.accounts;
+package com.ms.accounts.controller;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -11,11 +11,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ms.accounts.dto.Account;
+import com.ms.accounts.repository.AccountRepository;
+
 @RestController
 public class AccountController {
 
-	protected Logger logger = Logger
-			.getLogger(AccountController.class.getName());
+	protected Logger logger = Logger.getLogger(AccountController.class.getName());
 	
 	@Autowired
 	AccountRepository accountRepository;
